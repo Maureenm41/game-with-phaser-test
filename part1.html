@@ -9,11 +9,36 @@
             margin: 0;
         }
     </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-    <audio src="assets/8 bit music.mp3" controls></audio>
+    
+    <!--nav-->
 
-<script type="text/javascript">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Making game with phaser is fun</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="part1.html">Tutorial game <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Game with my design</a>
+            </li>
+           
+          </ul>
+        </div>
+      </nav>
+
+    <!--Game-->
+    
+    
+    <div class="game">
+        <script type="text/javascript">
 
 var config = {
     type: Phaser.AUTO,
@@ -190,6 +215,9 @@ if (cursors.up.isDown && player.body.touching.down)
     }
 
 </script>
+</div>
 
+<!--audio test-->
+<div><audio src="assets/8 bit music.mp3" controls></audio></div>
 </body>
 </html>
