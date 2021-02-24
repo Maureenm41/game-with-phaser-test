@@ -24,7 +24,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="part1.html">Tutorial game <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Tutorial game <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="test.html">Game with my design</a>
@@ -212,6 +212,14 @@ if (cursors.up.isDown && player.body.touching.down)
 {
     player.setVelocityY(-330);
 }
+    }
+
+
+
+    restartGame: function() {
+        tilesArray.length = 0;
+        selectedArray.length = 0;
+        game.state.start("TitleScreen");
     }
 
 </script>
