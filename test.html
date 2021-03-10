@@ -77,7 +77,9 @@ var config = {
         this.load.image('bomb', 'assets/bomb2.png');
         this.load.spritesheet('dude', 
         'assets/dude2.png',
-        { frameWidth: 32, frameHeight: 48 }
+        { frameWidth: 32, frameHeight: 48 },
+        this.load.audio("audio_2",["assets/petales-japan.mp3"]),
+        
     );
     }
 
@@ -229,6 +231,6 @@ if (cursors.up.isDown && player.body.touching.down)
 
 
 <!--audio test-->
-<div class="music"><audio src="assets/petales japan.mp3" controls></audio></div>
+<div class="music"><audio src="assets/petales-japan.mp3" controls></audio></div>
 </body>
 </html>
