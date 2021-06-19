@@ -18,3 +18,13 @@ canvas
     margin-right: auto;
     display: block;
 }
+
+button
+{
+    background-color: #fff;
+    border-radius: 30%;
+    border-color: #fff;
+    position:absolute;
+    bottom:0;
+    right: 10px;
+}
